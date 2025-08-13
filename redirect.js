@@ -12,9 +12,11 @@
         });
         
         // 跳转到目标页面
+        debugger;
         window.location.href = `https://help.sap.com/?${params.toString()}`;
     } else {
         // 回退方案：无用户信息时直接跳转
+        debugger;
         window.location.href = 'https://help.sap.com/';
     }
 })();
