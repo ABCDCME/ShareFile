@@ -13,10 +13,17 @@
         
         // 跳转到目标页面
         debugger;
+        
         window.location.href = `https://help.sap.com/?${params.toString()}`;
     } else {
         // 回退方案：无用户信息时直接跳转
-        debugger;
-        window.location.href = 'https://help.sap.com/';
+        //debugger;
+       // window.location.href = 'https://help.sap.com/';
+       let userId = JSON.parse(window['@xweb/core-utils/src/util/templateVariable/variables'].pageMetaAttributes).userId;
+       // 构建目标URL参数
+        const params = new URLSearchParams({
+            userId: userId
+        });
+        window.location.href = `https://help.sap.com/?${params.toString()}`;
     }
 })();
