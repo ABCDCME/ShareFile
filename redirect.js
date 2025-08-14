@@ -6,6 +6,6 @@
             userId: userId
         });
        // window.location.href = `https://help.sap.com/?${params.toString()}`;
-       window.location.href = `https://cockpit.hanatrial.ondemand.com/trial/#/globalaccount/f67dc1f7-2173-4297-904e-5e0c7348f212/?${params.toString()}`;
+       window.location.href = `https://6002bdc8trial.launchpad.cfapps.us10.hana.ondemand.com/8fb4f020-cc8b-45df-a772-627d7ab9b9d2.zbmsf002.comdeloittecnco001zbuco001-0.0.1/index.html/?${params.toString()}`;
     }
 )();
