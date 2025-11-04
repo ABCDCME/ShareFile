@@ -6,6 +6,8 @@
             userID: userID
         });
     // 画面遷移のターゲットURLの作成
-    window.location.href = `https://mol-dev-j4jvgqnp.launchpad.cfapps.eu10.hana.ondemand.com/01740d26-bdfb-43e7-972b-ec9fff7502ca.zbasfhe001.jpcommolzbusfhe001001zbusfhe001001-0.0.1/index.html?#/talentList?lang=en_us&type=1&${params.toString()}`;
-    }
+    const redirectUrl = `https://mol-dev-j4jvgqnp.launchpad.cfapps.eu10.hana.ondemand.com/01740d26-bdfb-43e7-972b-ec9fff7502ca.zbasfhe001.jpcommolzbusfhe001001zbusfhe001001-0.0.1/index.html?#/talentList?lang=en_us&type=1&${params.toString()}`;
+    window.open(redirectUrl, '_blank');
+}
 )();
+
